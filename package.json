@@ -1,0 +1,11 @@
+{
+  "name": "can-explainer",
+  "private": true,
+  "type": "module",
+  "description": "Interaktiv förklaring av CAN-bussar i lastbilar",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/*.test.mjs",
+    "build:artifact": "node tools/build-artifact.mjs"
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- page:start -->
+<title>CAN-bussen i lastbilen</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<!-- head:end -->
+</head>
+<body>
+<!-- body:start -->
+<div class="app">
+  <section class="stage" id="stage" aria-label="3D-vy">
+    <canvas id="scene"></canvas>
+    <div class="labels" id="labels" aria-hidden="true"></div>
+    <div class="stage-top">
+      <span class="brand">CAN-bussen i lastbilen</span>
+      <span class="hint">Dra för att vrida · scrolla för att zooma</span>
+    </div>
+    <ul class="legend" id="legend" aria-label="Teckenförklaring"></ul>
+    <p class="fallback" id="fallback" hidden>3D-vyn kunde inte startas i den här webbläsaren. Texten och övningarna fungerar ändå.</p>
+  </section>
+
+  <nav class="timeline" id="timeline" aria-label="Kapitel"></nav>
+
+  <main class="panel">
+    <header class="panel-head">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1 id="title" tabindex="-1"></h1>
+    </header>
+    <div class="content" id="content"></div>
+    <footer class="nav">
+      <button type="button" class="btn" id="prev">Föregående</button>
+      <button type="button" class="btn primary" id="next">Nästa</button>
+    </footer>
+  </main>
+</div>
+<script type="module" src="js/main.js"></script>
+<!-- body:end -->
+</body>
+</html>
