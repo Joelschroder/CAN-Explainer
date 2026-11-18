@@ -22,7 +22,18 @@ npm start          # python3 -m http.server 8080
 # öppna http://localhost:8080
 ```
 
-Vilken statisk server som helst fungerar, till exempel GitHub Pages direkt från repots rot.
+Vilken statisk server som helst fungerar.
+
+### GitHub Pages
+
+Sidan kan publiceras direkt från repots rot, utan byggsteg:
+
+1. Öppna **Settings → Pages** i repot.
+2. Under **Build and deployment**, välj **Source: Deploy from a branch**.
+3. Välj grenen och mappen **/ (root)**, och spara.
+
+Efter någon minut finns sidan på `https://<användare>.github.io/<repo>/`. Filen `.nojekyll`
+gör att GitHub serverar filerna som de är.
 
 ## Test
 
